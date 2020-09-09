@@ -12,6 +12,7 @@ def check_users(current_users, new_users):
             xlist.append(new_users)
         else:
             olist.append(new_users)
+    
     print("Unavailable usernames, please enter a new one:")
     print(xlist)
     print("Available usernames:")
