@@ -13,10 +13,18 @@ def check_users(current_users, new_users):
         else:
             olist.append(new_users)
     
-    print("Unavailable usernames, please enter a new one:")
-    print(xlist)
-    print("Available usernames:")
-    print(olist)
+    if not xlist:
+        print("No unavailable usernames entered")
+    else:
+        print("Unavailable usernames, please enter a new one:")
+        print(xlist)
+
+    if not olist:
+        print("No available usernames entered")
+    else:
+        print("These usernames are available:")
+        print(olist)
+
 
 if __name__ == "__main__":
     current_us = ['chris','haritha', 'sally', 'darnell', 'superman']
