@@ -1,5 +1,4 @@
 def spiral(x):
-#im sorry if some of this is redundant, i spent hours on this i'm afraid to break it now
 
     sum=1
     val=0
