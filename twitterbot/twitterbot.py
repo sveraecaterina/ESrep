@@ -13,7 +13,7 @@ f = [j for j in f if j != '\n']
 filename.close()
 
 #Tweet a line every hour
-for line in file:
+for line in f:
      api.update_status(line)
      print(line)
      time.sleep(3600) #Sleep for 1 hour
